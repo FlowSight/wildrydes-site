@@ -9,7 +9,7 @@ WildRydes.map = WildRydes.map || {};
             method: 'POST',
             url: _config.api.additionUrl + '/add',
             headers: {
-                Authorization: authToken
+                Authorization: 'eyJraWQiOiJLTzRVMWZs'
             },
             data: JSON.stringify({
                 AddArgs: {
