@@ -9,7 +9,6 @@ WildRydes.map = WildRydes.map || {};
             method: 'POST',
             url: _config.api.additionUrl + '/add',
             headers: {
-                Authorization: 'eyJraWQiOiJLTzRVMWZs'
             },
             data: JSON.stringify({
                 AddArgs: {
@@ -20,7 +19,7 @@ WildRydes.map = WildRydes.map || {};
             contentType: 'application/json',
             success: completeRequest,
             error: function ajaxError(jqXHR, textStatus, errorThrown) {
-                console.error('Error requesting ride: ', textStatus, ', Details: ', errorThrown);
+                console.error('Error adding numbers: ', textStatus, ', Details: ', errorThrown);
                 console.error('Response: ', jqXHR.responseText);
                 alert('An error occured when adding:\n' + jqXHR.responseText);
             }
@@ -47,6 +46,6 @@ WildRydes.map = WildRydes.map || {};
     }
 
     function completeRequest(result) {
-        console.log('Addition Result: ', result.Result);
+        alert('Addition Result: ', result.Result);
     }
 }(jQuery));
