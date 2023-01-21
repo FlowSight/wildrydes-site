@@ -47,5 +47,6 @@ WildRydes.map = WildRydes.map || {};
 
     function completeRequest(result) {
         alert('Addition Result: ', result.Result);
+        $('#result').val(result.Result)
     }
 }(jQuery));
